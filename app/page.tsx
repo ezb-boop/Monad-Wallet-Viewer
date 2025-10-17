@@ -96,7 +96,7 @@ ${getDynamicMessage()}
         className="w-20 h-20 mb-4 opacity-90 animate-fade-in"
       />
 
-      <h1 className="text-4xl font-extrabold mb-4 text-[#836EF9]">
+      <h1 className="text-3xl sm:text-5xl font-extrabold mb-4 text-[#836EF9] text-center leading-tight">
         Monad Wallet Viewer
       </h1>
       <p className="opacity-80 mb-8 text-center max-w-md">
