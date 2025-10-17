@@ -37,7 +37,7 @@ export default function Home() {
 
   // Obtener info de wallet
   const getBalance = async () => {
-    if (!wallet) return alert("Por favor pega una dirección de wallet primero.");
+    if (!wallet) return alert("Please paste a wallet address first.");
     try {
       setLoading(true);
 
@@ -55,7 +55,7 @@ export default function Home() {
 
     } catch (err: any) {
       console.error("Error RPC:", err);
-      alert(`Error obteniendo datos: ${err?.message ?? err}`);
+      alert(`Error obtaining data: ${err?.message ?? err}`);
     } finally {
       setLoading(false);
     }
@@ -78,7 +78,7 @@ ${getDynamicMessage()}
       navigator.clipboard.writeText(text);
       alert("Copied wallet summary! Ready to share on X 🪩");
     } catch {
-      alert("No se pudo copiar al portapapeles. Copia manualmente:\n\n" + text);
+      alert("Could not copy to clipboard. Copy manually.:\n\n" + text);
     }
   };
 
